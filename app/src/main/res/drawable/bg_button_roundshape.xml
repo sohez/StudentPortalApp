@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    LayerList drawable. This allows you to stack multiple drawables, -->
+<!--    one for the button's existing background and another for the ripple effect-->
+<!-- Layer 1: Your custom button background -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="@color/main_color"/>
+        </shape>
+    </item>
+<!-- Layer 2: Ripple effect -->
+<item android:id="@android:id/mask">
+    <ripple
+        android:color="?android:colorControlHighlight">
+        <item android:id="@android:id/mask">
+            <shape android:shape="rectangle">
+                <corners android:radius="20dp"/>
+                <solid android:color="?android:colorPrimary" />
+            </shape>
+        </item>
+    </ripple>
+</item>
+</layer-list>

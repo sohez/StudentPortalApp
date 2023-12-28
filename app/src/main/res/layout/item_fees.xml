@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edittext_roundshape"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/LayoutFeesType"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/LayoutProgram"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/LayoutStatues"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/LayoutTotalAmount"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/LayoutPaidAmount"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/LayoutPendingAmount"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/LayoutDueDate"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/LayoutLastUpdate"
+            layout="@layout/item_personal_row_data" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_payFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_roundshape"
+                android:text="Pay Fees"
+                style="@style/SimpleTextView"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

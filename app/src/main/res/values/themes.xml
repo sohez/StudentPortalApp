@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Student" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/main_color</item>
+        <item name="colorOnPrimary">@color/black_25</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/main_color</item>
+        <item name="colorSecondaryVariant">@color/main_color</item>
+        <item name="colorOnSecondary">@color/black_25</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="backgroundColor">@color/white</item>
+    </style>
+
+    <style name="RegisterTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/main_color</item>
+        <item name="android:textColor">@color/black_25</item>
+    </style>
+
+    <style name="CurciveTextView">
+        <item name="android:textSize">25sp</item>
+        <item name="fontFamily">@font/pacifico</item>
+    </style>
+
+    <style name="SimpleTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/poppinslight</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SimpleTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppinslight</item>
+    </style>
+
+    <style name="InvalidTextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/pink</item>
+        <item name="fontFamily">@font/poppinslight</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="SimpleEdittext">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="fontFamily">@font/poppinslight</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Student" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+</resources>

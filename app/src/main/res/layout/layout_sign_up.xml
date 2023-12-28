@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include
+            layout="@layout/component_edittext_with_icon"
+            android:id="@+id/name"
+            app:icon="@{@drawable/ic_person}"
+            app:hintText="@{`Full Name`}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+        <include
+            layout="@layout/component_edittext_with_icon"
+            android:id="@+id/email"
+            app:icon="@{@drawable/ic_email}"
+            app:hintText="@{`Email`}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+        <include
+            layout="@layout/component_edittext_with_icon"
+            android:id="@+id/phoneNo"
+            app:icon="@{@drawable/ic_phone}"
+            app:hintText="@{`Phone Number`}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+        <include
+            layout="@layout/component_edittext_with_icon"
+            android:id="@+id/pass"
+            app:icon="@{@drawable/ic_lock}"
+            app:hintText="@{`Password`}"
+            />
+        <TextView
+            style="@style/InvalidTextView"
+            android:id="@+id/text_invalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+        <include
+            layout="@layout/component_edittext_with_icon"
+            android:id="@+id/repeat_pass"
+            app:icon="@{@drawable/ic_lock}"
+            app:hintText="@{`Repeat Password`}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+        <include
+            layout="@layout/component_button"
+            android:id="@+id/signup_button"
+            app:buttonText="@{`Sign up`}"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            style="@style/SimpleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/already_have_an_account"
+            android:textAlignment="center"
+            android:textColor="@color/black_25"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            style="@style/SimpleTextView"
+            android:id="@+id/text_link_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/Login"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

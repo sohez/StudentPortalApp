@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TableRow
+    android:weightSum="3"
+    >
+        <TextView
+            android:id="@+id/srNo"
+            android:text="Sr NO"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/subjectName"
+            android:text="Subject Name"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:text="Date"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:layout_column="1"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:text="Time"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+    </TableRow>
+</TableLayout>

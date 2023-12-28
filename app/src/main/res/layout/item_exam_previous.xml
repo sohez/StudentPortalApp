@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_edittext_roundshape"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/incExamPreCourseName"
+        layout="@layout/item_personal_row_data" />
+
+    <include
+        android:id="@+id/incExamPreSem"
+        layout="@layout/item_personal_row_data" />
+
+    <include
+        android:id="@+id/incExamPreDateOfExam"
+        layout="@layout/item_personal_row_data" />
+
+    <include
+        android:id="@+id/incExamPrePass"
+        layout="@layout/item_personal_row_data" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_roundshape"
+            android:text="Result"
+            style="@style/SimpleTextView"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

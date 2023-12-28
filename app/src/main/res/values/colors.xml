@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#BABABA</color>
+    <color name="light_grey">#F0F0F5</color>
+    <color name="main_50">#505A6E</color>
+    <color name="main_color">#00BCD4</color>
+    <color name="black_25">#FF252525</color>
+    <color name="pink">#E91E63</color>
+<!--    <color name="main_color">#E80F59</color>-->
+    <color name="white">#FFFFFFFF</color>
+</resources>

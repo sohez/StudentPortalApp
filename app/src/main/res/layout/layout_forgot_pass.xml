@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include
+            layout="@layout/component_edittext_with_icon"
+            android:id="@+id/email"
+            app:icon="@{@drawable/ic_email}"
+            app:hintText="@{`Email`}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+        <TextView
+            style="@style/InvalidTextView"
+            android:id="@+id/text_invalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/ll_otp_expand"
+            >
+            <include
+                layout="@layout/component_edittext_with_icon"
+                android:id="@+id/otp"
+                app:icon="@{@drawable/ic_otp}"
+                app:hintText="@{`OTP`}"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <include
+                layout="@layout/component_edittext_with_icon"
+                android:id="@+id/pass"
+                app:icon="@{@drawable/ic_lock}"
+                app:hintText="@{`Password`}"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <include
+            layout="@layout/component_button"
+            android:id="@+id/send_button"
+            app:buttonText="@{`Send OTP`}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            style="@style/SimpleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/don_t_have_an_account"
+            android:textAlignment="center"
+            android:textColor="@color/black_25"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            style="@style/SimpleTextView"
+            android:id="@+id/text_link_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_edittext_roundshape"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/subject"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/teacher"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/teacher_id"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/time"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/day"
+            layout="@layout/item_personal_row_data" />
+
+        <include
+            android:id="@+id/type"
+            layout="@layout/item_personal_row_data" />
+
+    </LinearLayout>
+</layout>
